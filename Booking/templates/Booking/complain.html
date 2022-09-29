@@ -1,0 +1,30 @@
+{% extends "Booking/base.html" %}
+{% block title %} Complain {% endblock %}
+
+
+{% block content %}
+
+	{% include "Booking/navBar.html" %}
+	
+	<div class="complain-wrapper">
+		<div class="complain-header">
+			<legend>Complain</legend>
+		</div>
+		<div class="complain-form">
+			<form onsubmit= "confirm()" action="" method="post">
+			{% csrf_token %}
+				<p>Subject</p>
+				<input type="text" name="subject" required placeholder="Subject">
+				
+				<p>Email</p>
+				<input type="email" name="email" placeholder="Email Address" required>
+				
+				<p>Message</p>
+				<textarea placeholder="Message" name="complain" id="complain" required></textarea>
+				
+				<button type="submit" id="complain-btn">Submit</button>
+			</form>
+		</div>
+	</div>
+	
+{% endblock %}

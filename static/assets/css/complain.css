@@ -1,0 +1,75 @@
+.complain-wrapper {
+	margin: 6em 25%;
+	min-height: 300px;
+	box-shadow: hsl(0,0%,8%) 0 0 1px;
+	background: #fff;
+	border-radius: 5px;
+}
+.complain-header {
+	height: 60%;
+	font-size: 30px;
+	background: #192224;
+	font-weight: 800;
+	color: #fff;
+	padding: 10px 20px;
+}
+.complain-form {
+	margin: 1.5em;
+	padding: 10px;
+}
+.complain-form p {
+	display: none;
+}
+.complain-form input {
+	width: 100%;
+	height: 60px;
+	padding: 10px;
+	margin: 20px 0;
+}
+#complain {
+	width: 100%;
+	height: 150px;
+	padding: 10px;
+	margin: 8px 0;
+}
+#complain-btn {
+	width: 40%;
+	padding: 30px;
+	margin: 10px 0;
+	color: #fff;
+	font-size: 30px;
+	background: rgb(27,150,29);
+	border: 1px solid #192224;
+	border-radius: 8px;
+}
+@media screen and (max-width: 700px) {
+	.complain-wrapper {
+		margin: 10em 35px;
+	}
+	.complain-header {
+		height: 50px;
+		font-size: 25px;
+		padding: 10px 20px;
+	}
+	.complain-form {
+		margin: 12px 15px;
+		padding: 5px;
+	}
+	.complain-form p {
+		display: block;
+		font-size: 20px;
+	}
+	.complain-form input {
+		margin: 8px 0;
+		height: 40px;
+	}
+	#complain {
+		height: 100px;
+		margin: 8px 0;
+	}
+	#complain-btn {
+		width: 100%;
+		padding: 20px;
+		font-size: 20px;
+	}
+}

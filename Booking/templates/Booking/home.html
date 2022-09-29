@@ -1,0 +1,94 @@
+{% extends "Booking/base.html" %}
+{% block title %} NSTA {% endblock %}
+
+
+{% block content %}
+
+	<section class="header">
+		{% include "Booking/navBar.html" %}
+
+		<div class="greet-text">
+			<h2>Niger State Transport Authority</h2>
+			<p>
+				Welcome to Niger State Transport Authority Official website. Have a wonderful experience as we make seat reservations faster and easier!!
+			</p>
+		</div>
+	</section>
+
+	<section class="content-wrapper">
+		<div class="col">
+			<h1>Departure Time</h1>
+			<div class="fit">
+				<span style="float: left;">Morning</span>
+				<span style="float: right;">7am</span>
+			</div>
+			<div class="fit">
+				<span style="float: left;">Afternoon</span>
+				<span style="float: right;">2pm</span>
+			</div>
+			<div class="fit">
+				<span style="float: left;">Evening</span>
+				<span style="float: right;">7pm</span>
+			</div>
+		</div>
+		<div class="col">
+			<h1>Destination & Prices</h1>
+			{% for destination in destinations %}
+			<div class="fit">
+				<span style="float: left;">{{ destination }}</span>
+				<span style="float: right;">{{ destination.price }}</span>
+			</div>
+			{% endfor %}
+		</div>
+
+		<div class="book-guide">
+			<center>
+				<h2>How to Book</h2>
+			</center>
+			<p>
+				I. Click on the <em><q>Reserve a seat today</q></em> Button
+			</p>
+			<p>
+				II. You will be redirected to the booking page where you shall provide all necessary information
+			</p>
+			<p>
+				III. Once the form has been completely filled, Proceed for payment.
+			</p>
+			<p>
+				IV. Any booking that is not paid for after 24hrs will be rendered null and inactive.
+			</p>
+			<p>
+				V. Ensure you get a confirmation after payment otherwise make a complaint.
+			</p>
+		</div>
+
+		<a href="{% url 'booking' %}"><button id="reserve-btn" type="button">Reserve a seat today</button></a>
+	</section>
+
+	<div class="book-guide-big-screen">
+		<center>
+			<h2>How to Book</h2>
+		</center>
+		<p>
+			I. Click on the <em><q>Reserve a seat today</q></em> Button
+		</p>
+		<p>
+			II. You will be redirected to the booking page where you shall provide all necessary information
+		</p>
+		<p>
+			III. Once the form has been completely filled, Proceed for payment.
+		</p>
+		<p>
+			IV. Any booking that is not paid for after 24hrs will be rendered null and inactive.
+		</p>
+		<p>
+			V. Ensure you get a confirmation after payment otherwise make a complaint.
+		</p>
+	</div>
+
+	<div>
+		<a href="{% url 'booking' %}"><button id="reserve-btn-big-screen" type="button">Reserve a seat today</button></a>
+	</div>
+
+
+{% endblock %}

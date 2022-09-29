@@ -1,0 +1,23 @@
+{% extends "Booking/base.html" %}
+{% block title %} Payment {% endblock %}
+
+
+{% block content %}
+
+	{% include "Booking/navBar.html" %}
+	
+	<div class="payment-wrapper">
+		<div class="payment-header">
+			<legend>Payment</legend>
+		</div>
+		<hr>
+		<div class="payment-body">
+			 <div id="paypal-button-container"></div>
+		</div>
+		<hr>
+		<div class="payment-footer">
+			<p>&copy;2022 codewitgabi inc</p>
+		</div>
+	</div>
+
+{% endblock %}

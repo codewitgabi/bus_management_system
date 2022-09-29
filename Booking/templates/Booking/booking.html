@@ -1,0 +1,60 @@
+{% extends "Booking/base.html" %}
+{% load static %}
+{% block title %} Booking {% endblock %}
+
+
+{% block content %}
+
+	{% include "Booking/navBar.html" %}
+	<div class="booking-wrapper">
+		<legend class="booking-header">Booking Form</legend>
+		<form id= "form" onsubmit= "return validate()" action="" method="post">
+		{% csrf_token %}
+			<p>
+				First Name
+			</p>
+			<input type="text" name="fName" id="fName" placeholder="First Name" required>
+			
+			<p>
+				Last Name
+			</p>
+			<input type="text" name="lName" id="sName" placeholder="Last Name">
+			
+			<p>Phone Number</p>
+			<input type="text" name="phone" required placeholder="Your Phone Number" id= "phone1">
+			<p id= "phone1Error" style= "font-size: 10px; color: red; visibility: hidden;"></p>
+			
+			<p>
+				Destination
+			</p>
+			<input id= "input-destination" name= "destination" list="location" placeholder="Destination" required>
+			<datalist id="location">
+				{% for destination in destinations %}
+					<option data-price= "{{ destination.price }}" value="{{ destination.name }}">{{ destination }}</option>
+				{% endfor %}
+			</datalist>
+			
+			<p>Date of Departure</p>
+			<input type="date" name="departure" required>
+			
+			<button type="submit" id="booking-submit-btn">Proceed</button>
+		</form>
+		
+		<div class="payment-wrap hide" id= "payment-id">
+			<div class="payment-header">
+				<legend>Payment</legend>
+			</div>
+			<hr>
+			<div class="payment-body">
+				 <div id="paypal-button-container"></div>
+			</div>
+			<hr>
+			<div class="payment-footer">
+				<p>&copy;2022 codewitgabi inc</p>
+			</div>
+		</div>
+		
+	</div>
+	
+	
+{% endblock %}

@@ -1,0 +1,43 @@
+.payment-wrapper {
+	margin: 6em 25%;
+	box-shadow: hsl(0,0%,18%) 0 0 8px;
+	background: #fff;
+	border-radius: 5px;
+}
+.payment-header {
+	text-align: center;
+	font-size: 30px;
+	padding: 12px 0;
+	font-weight: 800;
+	background: #192224;
+	color: #fff;
+}
+.payment-body {
+	margin: 12px 15px;
+	padding: 5px;
+}
+.payment-footer {
+	margin: 12px 15px;
+	padding: 2px 0 5px 0;
+}
+@media screen and (max-width: 700px) {
+	.payment-wrapper {
+		margin: 15% 35px;
+	}
+	.payment-header {
+		font-size: 25px;
+	}
+	.payment-body {
+		margin: 10px 12px;
+	}
+	.payment-footer {
+		margin: 10px 12px;
+	}
+	#paypal-button-container {
+		position: relative;
+		z-index: 1;
+	}
+	.payment-wrap {
+		margin: 30px 0;
+	}
+}
