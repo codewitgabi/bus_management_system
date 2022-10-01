@@ -1,5 +1,5 @@
 .booking-wrapper {
-	margin: 6em 15%;
+	margin: 6em 25%;
 	padding: 2em;
 	box-shadow: hsl(0,0%,18%) 0 0 10px;
 	background: #fff;
@@ -27,8 +27,8 @@
 	background: #e5cb0e;
 	color: #fff;
 	margin: 40px 0;
-	font-size: 30px;
-	padding: 30px;
+	font-size: 1em;
+	padding: 10px;
 }
 
 .hide {

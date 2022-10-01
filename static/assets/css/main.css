@@ -8,7 +8,6 @@ nav {
 	padding: 2% 8%;
 	justify-content: space-between;
 	align-items: center;
-	background: #121931;
 }
 .links ul li {
 	display: inline-block;
@@ -22,12 +21,12 @@ a {
 	display: none;
 }
 .greet-text {
-	margin-top: 40%;
+	margin-top: 1%;
 	color: #fff;
 	text-align: center;
-	font-size: 3em;
+	font-size: 1.5em;
 	font-weight: 100;
-	padding: 30px;
+	padding: 10%;
 }
 .greet-text h2 {
 	margin-bottom: 80px;
@@ -47,11 +46,11 @@ a {
 	margin: 10px;
 }
 .col h1 {
-	font-size: 50px;
+	font-size: 1.5em;
 	margin-bottom: 10px;
 }
 .col span {
-	font-size: 30px;
+	font-size: 1.3em;
 }
 .fit {
 	clear: both;
@@ -76,10 +75,10 @@ a {
 	margin: 2em 7.5% 1em 7.5%;
 }
 .book-guide-big-screen h2 {
-	font-size: 50px;
+	font-size: 2em;
 }
 .book-guide-big-screen p {
-	font-size: 40px;
+	font-size: 1.3em;
 	margin: 30px 0;
 }
 .hidden {
@@ -128,7 +127,7 @@ a {
 	}
 	.greet-text {
 		position: absolute;
-		font-size: 30px;
+		font-size: 1.2em;
 		font-style: italic;
 		margin: 0;
 		top: 10%;
